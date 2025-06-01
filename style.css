@@ -658,23 +658,35 @@ body {
 }
 
 @media (max-width: 400px) {
-  .navigation .logo {
-    display: none;
+  .navigation {
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
   }
 
-  .navigation {
-    justify-content: center;
-    padding: 10px 15px;
+  .navigation .logo {
+    font-size: 1.6rem;
+    text-align: center;
+    margin-bottom: 0.8rem;
   }
 
   .navigation ul {
-    gap: 0.7rem;
-    flex-wrap: nowrap;
+    flex-direction: row;       
+    flex-wrap: nowrap;          
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;                 
+    padding: 0;
+    margin: 0;
+  }
+
+  .navigation ul li {
+    list-style: none;
   }
 
   .navigation ul li a {
-    font-size: 13px;
-    padding: 4px;
+    font-size: 14px;
+    white-space: nowrap;        
   }
 
   .home {
